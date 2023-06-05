@@ -30,3 +30,13 @@ jobs:
         run: npm run build
       - name: Test
         run: npm run test -- --ci --maxWorkers=1 --reporters=default
+      - name: Setup AWS credentials
+        run: |
+          mkdir ~/.aws
+          cat > ~/.aws/credentials << EOL
+          [default]
+          aws_access_key_id = ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_access_key = ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          EOL
+      - name: Check CDK
+        run: npm run cdk synth --verbose
