@@ -42,7 +42,7 @@
     "@typescript-eslint/parser": "5.60.1",
     "aws-cdk": "2.86.0",
     "aws-cdk-lib": "2.86.0",
-    "constructs": "10.2.66",
+    "constructs": "10.2.67",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "8.44.0",
     "eslint-plugin-import": "2.27.5",
