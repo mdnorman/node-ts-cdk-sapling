@@ -44,7 +44,7 @@
     "aws-cdk-lib": "2.89.0",
     "constructs": "10.2.69",
     "cz-conventional-changelog": "3.3.0",
-    "eslint": "8.44.0",
+    "eslint": "8.46.0",
     "eslint-plugin-import": "2.27.5",
     "eslint-plugin-prettier": "4.2.1",
     "husky": "8.0.3",
